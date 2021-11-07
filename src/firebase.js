@@ -1,9 +1,10 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
+import "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FB_API,
+  apiKey: process.env.REACT_APP_FB_KEY,
   authDomain: "proger-87bcd.firebaseapp.com",
   projectId: "proger-87bcd",
   storageBucket: "proger-87bcd.appspot.com",
@@ -15,7 +16,8 @@ firebase.initializeApp(firebaseConfig);
 
 const db = firebase.firestore();
 const auth = firebase.auth();
+const storage = firebase.storage();
 
 const timestamp = firebase.firestore.Timestamp;
 
-export { db, auth, timestamp };
+export { db, auth, storage, timestamp };
