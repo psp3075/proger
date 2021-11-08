@@ -27,9 +27,9 @@
 }
 .sidebar .links a {
   display: flex;
-  padding: 10px;
+  padding: 10px 20px;
   text-decoration: none;
-  width: 100%;
+  width: 90%;
   color: #fff;
   box-sizing: border-box;
 }
@@ -40,7 +40,7 @@
 .sidebar .links a.active {
   color: #555;
   background: var(--bg-color);
-  border-radius: 20px 0 0 20px;
+  border-radius: 20px;
 }
 .sidebar .links .active img {
   filter: invert(40%);
